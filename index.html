@@ -31,6 +31,46 @@ section[id]{scroll-margin-top:100px}a:focus-visible,button:focus-visible,input:f
 @media(max-width:700px){.portfolio-grid{grid-template-columns:1fr}.portfolio-card{padding:22px}.portfolio-heading{font-size:26px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition:none!important}}
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style id="portfolio-harmonisation">
+/* Palette et typographie communes aux deux pages. */
+:root{--page:#f8fafc;--surface:#fff;--surface-alt:#eef2f6;--ink:#172033;--muted:#475569;--accent:#8a5a12;--gold:#e5b65c;--line:#cbd5e1;--nav:rgba(248,250,252,.96)}
+html.dark{--page:#111827;--surface:#192334;--surface-alt:#152030;--ink:#f1f5f9;--muted:#c0cad8;--accent:#e5b65c;--gold:#e5b65c;--line:#354155;--nav:rgba(17,24,39,.96)}
+html{scroll-behavior:smooth;color-scheme:light}html.dark{color-scheme:dark}
+body{background:var(--page)!important;color:var(--ink)!important;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;line-height:1.75}
+h1,h2,h3,h4,h5,h6,.font-serif,.font-poppins,.font-sans,.navbar{font-family:Inter,system-ui,sans-serif!important;letter-spacing:-.025em}
+h1{line-height:1.15!important}h2,h3{line-height:1.35}p{line-height:1.8}
+.text-slate-400,.text-gray-300,.text-gray-400,.portfolio-intro,.portfolio-card p,.portfolio-list,.outfit-gallery figcaption{color:var(--muted)!important}
+.text-white,.text-black,.text-gray-200{color:var(--ink)!important}
+.text-amber-400,.text-amber-500,.portfolio-link{color:var(--accent)!important}
+.bg-gray-50,.dark\:bg-slate-800{background:var(--surface-alt)!important}
+.bg-white,.dark\:bg-slate-900{background-color:var(--surface)!important}
+.navbar,body>nav{background:var(--nav)!important;border-bottom:1px solid var(--line)!important;backdrop-filter:blur(12px)}
+.navbar .navigation .navbar-nav .nav-link{color:var(--muted)!important}
+.navbar .navigation .navbar-nav .nav-link:hover,.navbar .navigation .navbar-nav .nav-link.active{color:var(--accent)!important}
+.personal-wrapper{background:radial-gradient(ellipse at 85% 45%,rgba(229,182,92,.09),transparent 50%)!important;isolation:isolate}
+.personal-wrapper::before,.personal-wrapper::after{display:none!important}
+#home{padding-top:150px;padding-bottom:48px}#home img{position:relative;max-height:680px;object-fit:contain;width:100%}
+.portfolio-card,.project-card,.glass-box{background:var(--surface)!important;border:1px solid var(--line)!important;box-shadow:0 8px 24px rgba(0,0,0,.06)!important}
+.project-card:hover,.tech-badge:hover,.video-container:hover{transform:none!important;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
+.portfolio-card{border-radius:18px}.project-card{border-radius:22px}
+.portfolio-tag,.tech-badge{color:var(--accent)!important;background:rgba(229,182,92,.08)!important;border:1px solid var(--line)!important}
+.btn.bg-amber-500,.btn-primary,.bg-amber-500.rounded-full,.bg-gradient-to-br{background:var(--gold)!important;color:#172033!important;border-color:var(--gold)!important;box-shadow:none!important}
+.btn.bg-amber-500:hover,.btn-primary:hover{background:#f0c778!important;color:#172033!important;transform:none!important}
+.btn.bg-amber-500 i,.bg-amber-500 i,.bg-gradient-to-br span{color:#172033!important}
+.btn.bg-amber-500\/10,.btn-secondary{background:transparent!important;border:1px solid var(--accent)!important;color:var(--accent)!important}
+.btn-secondary:hover{background:rgba(229,182,92,.1)!important;transform:none!important}
+.btn{margin-bottom:8px}a,button{transition:color .15s,background-color .15s,border-color .15s}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+input:not([type=checkbox]),textarea{background:var(--surface)!important;color:var(--ink)!important;border:1px solid var(--line)!important}
+input::placeholder,textarea::placeholder{color:var(--muted)!important;opacity:1}
+footer{background:var(--page)!important;border-color:var(--line)!important}
+.outfit-gallery a{background:transparent!important;padding:0!important}.outfit-gallery img{width:100%;height:auto;max-height:none}
+.theme-button{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font:inherit;color:var(--ink);background:var(--surface);cursor:pointer;font-size:14px}
+section[id],article[id]{scroll-margin-top:110px}
+@media(max-width:700px){#home{padding-top:120px}h1{font-size:36px!important}.portfolio-heading{font-size:27px}.project-card{padding:24px!important}.outfit-gallery{grid-template-columns:1fr;max-width:none}.theme-button{padding:7px 10px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
 </head>
     
     <body class="font-poppins text-base text-black dark:text-white dark:bg-slate-900">
@@ -415,5 +455,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
          
     
-    </body>
+    <script>
+(() => {
+ const root=document.documentElement;
+ let saved=null;try{saved=localStorage.getItem('portfolio-theme')}catch(e){}
+ if(saved==='light'||saved==='dark') root.classList.toggle('dark',saved==='dark');
+ const button=document.getElementById('portfolio-theme');
+ const checkbox=document.getElementById('chk');
+ function sync(){if(button){button.textContent=root.classList.contains('dark')?'Thème clair':'Thème sombre';button.setAttribute('aria-pressed',String(root.classList.contains('dark')))}if(checkbox)checkbox.checked=!root.classList.contains('dark')}
+ function save(){try{localStorage.setItem('portfolio-theme',root.classList.contains('dark')?'dark':'light')}catch(e){}sync()}
+ if(button)button.addEventListener('click',()=>{root.classList.toggle('dark');save()});
+ if(checkbox){checkbox.setAttribute('aria-label','Changer le thème clair ou sombre');checkbox.addEventListener('change',()=>{root.classList.toggle('dark',!checkbox.checked);save()})}
+ sync();
+})();
+</script>
+</body>
 </html>
