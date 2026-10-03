@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth" dir="ltr">
+<html lang="fr" class="dark scroll-smooth" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio Carole</title>
-        <meta name="description" content="Carole portfolio">
-        <meta name="keywords" content="Carole portfolio">
-        <meta name="author" content="Carole portfolio">
-        <meta name="website" content="https://carole.com">
+        <title>Carole DAPAH — Développement logiciel &amp; Data</title>
+        <meta name="description" content="Carole DAPAH — développement logiciel, backend, data et applications métiers.">
+        <meta name="author" content="Carole DAPAH">
         <meta name="email" content="dapahcarole1@gmail.com">
-        <meta name="version" content="1.0.0">
         <!-- favicon -->
         <link href="assets/images/favicon.ico" rel="shortcut icon">
 
@@ -22,7 +19,19 @@
         <link rel="stylesheet" href="assets/css/tailwind.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    </head>
+    <style>
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.portfolio-card{padding:28px;border:1px solid rgba(148,163,184,.22);border-radius:18px;background:rgba(148,163,184,.05)}
+.portfolio-card h3{font-size:21px;font-weight:600;margin-bottom:14px}.portfolio-card p{line-height:1.8;color:#64748b}
+.dark .portfolio-card p,.dark .portfolio-list{color:#cbd5e1}.portfolio-list{padding-left:20px;list-style:disc;color:#64748b;line-height:1.9}
+.portfolio-tag{display:inline-block;font-size:13px;color:#b45309;background:rgba(245,158,11,.10);border-radius:8px;padding:5px 10px;margin:5px 5px 0 0}.dark .portfolio-tag{color:#fbbf24}
+.portfolio-heading{font-size:30px;font-weight:700;margin-bottom:18px}.portfolio-intro{max-width:760px;margin:0 auto 32px;color:#64748b;line-height:1.8}.dark .portfolio-intro{color:#cbd5e1}
+.portfolio-link{display:inline-block;margin-top:20px;color:#b45309;font-weight:600}.dark .portfolio-link{color:#fbbf24}
+section[id]{scroll-margin-top:100px}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #f59e0b;outline-offset:4px}
+@media(max-width:700px){.portfolio-grid{grid-template-columns:1fr}.portfolio-card{padding:22px}.portfolio-heading{font-size:26px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition:none!important}}
+</style>
+</head>
     
     <body class="font-poppins text-base text-black dark:text-white dark:bg-slate-900">
         <!-- Navbar Start -->
@@ -35,7 +44,7 @@
                 <div class="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
                     <ul class="list-none menu-social mb-0">
                         <li class="inline">
-                             <a href="https://www.linkedin.com/in/carole-dapah-049a58265/" target="_blank">
+                             <a href="https://www.linkedin.com/in/carole-dapah-049a58265/" target="_blank" rel="noopener noreferrer">
                     <span class="login-btn-primary">
                         <span class="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 
                                      border-amber-500 hover:border-amber-600 text-white">
@@ -43,15 +52,15 @@
                         </span>
                     </span>
                 </a>
-                             <a href="https://www.facebook.com/webcreateplus/" target="_blank">
+                             <a href="https://github.com/Cdapah" target="_blank" rel="noopener noreferrer">
                     <span class="login-btn-primary">
                         <span class="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 
                                      border-amber-500 hover:border-amber-600 text-white">
-                            <i class="uil uil-facebook-f align-middle"></i>
+                            <i class="uil uil-github align-middle"></i>
                         </span>
                     </span>
                 </a>
-                            <a href="https://www.instagram.com/cdapah/" target="_blank">
+                            <a href="https://www.instagram.com/cdapah/" target="_blank" rel="noopener noreferrer">
                                 <span class="login-btn-primary">
                                     <span class="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white">
                                         <i class="uil uil-instagram align-middle"></i>
@@ -93,26 +102,14 @@
 
         <!-- Start Hero -->
         <section class="relative pt-28 personal-wrapper overflow-hidden bg-amber-500/5" id="home">
-            <div class="container">
-                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
-                    <div>
-                        <h4 class="font-bold lg:text-[40px] text-3xl lg:leading-normal leading-normal mb-4">Salut! Je suis <br>
-                            <span class="typewrite text-amber-500" data-period="2000" data-type='[ "Carole DAPAH", "Étudiante en Master SIL- Science de l Ingénierie et des Logiciels", "Alternante Développeuse Logiciels à la SNCF" ]'>
-        <span class="wrap"></span>
-    </span>
-                        </h4>
-                        <p class="text-slate-400 max-w-xl">Étudiante en Master SIL (Science de l’Ingénierie et des Logiciels) à l’Université de Strasbourg et alternante à la SNCF, passionnée par le développement logiciel, l’architecture des systèmes et l’ingénierie informatique.</p>
-                        <div class="mt-6">
-                            <a href="" class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md">Engagez-moi</a>
-                            <a href="assets/images/cv.pdf" class="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md ms-1">Mon CV</a>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <img src="assets/images/hero/2.png" alt="Carole DAPAH">
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="container"><div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+<div><p class="text-amber-500 font-semibold mb-4">Développement logiciel · Backend · Data</p>
+<h1 class="font-bold lg:text-[40px] text-3xl lg:leading-normal leading-normal mb-4">Carole DAPAH</h1>
+<p class="text-slate-400 max-w-xl">Je conçois des applications et des outils pour simplifier les processus, automatiser les tâches et rendre les données plus faciles à exploiter.</p>
+<p class="text-slate-400 max-w-xl mt-4">Applications métiers chez SNCF Voyageurs · Projets web, mobile et data.</p>
+<div class="mt-6"><a href="#projets" class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 text-white rounded-md">Découvrir mes projets</a>
+<a href="assets/images/cv.pdf" class="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 text-amber-500 hover:text-white rounded-md ms-1">Mon CV</a></div>
+</div><div class="relative"><img src="assets/images/hero/2.png" alt="Portrait de Carole DAPAH"></div></div></div></section>
 
 
         <div class="relative">
@@ -123,256 +120,29 @@
         <!-- End Hero -->
 
         <!-- Start -->
-        <section class="relative md:py-24 py-16" id="about">
-            <div class="container">
-                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
-                    <div class="lg:col-span-5 lg:px-8">
-                        <div class="relative">
-                            <!-- Supposons que cette image soit une photo de profil appropriée -->
-                            <img src="assets/images/hero/3.png" class="rounded-full shadow-md shadow-gray-200 dark:shadow-gray-800" alt="Carole DAPAH">
-
-                            <!-- Détails spécifiques sur votre formation et expérience -->
-                            <div class="absolute lg:bottom-20 md:bottom-10 bottom-6 ltr:lg:-right-16 rtl:lg:-left-16 ltr:md:-right-8 rtl:md:-left-8 ltr:right-0 rtl:left-0 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
-                                <h6 class="font-semibold">Étudiante en Master SIL</h6>
-                                <span class="text-2xl font-medium text-amber-500 mb-0">1<sup>ère</sup> Année</span>
-                                <span class="text-sm text-slate-400">Université de Strasbourg</span>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="lg:col-span-7">
-                        <div class="lg:ms-5">
-                            <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">À Propos de Moi</h3>
-
-                            <!-- Mise à jour avec une description adaptée à votre profil -->
-                            <p class="text-slate-400 max-w-xl text-[15px]">Actuellement étudiante en Master SIL (Conception, Intégration et Logiciels) à l’Université de Strasbourg, je me spécialise dans le développement logiciel, l’intégration de systèmes et l’ingénierie informatique. En alternance à la SNCF, je mets en pratique mes compétences sur des projets concrets et à fort impact.</p>
-                            <p class="text-slate-400 max-w-xl text-[15px] mt-6">Mes expériences passées chez BNP Paribas et H&M m'ont appris la rigueur, l’organisation et le sens du service, que j’applique aujourd’hui dans mon alternance à la SNCF pour concevoir et livrer des solutions logicielles fiables et adaptées aux besoins métiers.</p>
-
-                            <div class="mt-6">
-                                <!-- Lien pour voir vos travaux ou projets -->
-                                <a href="./projets.html" 
-                                    class="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2">Voir Mes Projets
-                                </a>
-
-                            </div>
-                    </div><!--end grid-->
-                </div><!--end grid-->
-            </div><!--end container-->
-
-
-            <div class="container md:mt-24 mt-16" id="competences">
-                <div class="grid grid-cols-1 pb-8 text-center">
-                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Centres d'Intérêt et Compétences</h3>
-                    <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Passionnée par la programmation et les nouvelles technologies, je suis constamment en quête de nouveaux défis et apprentissages dans le domaine de l'informatique.</p>
-                </div><!--end grid-->
-
-                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                    <!-- Chaque item représente une compétence ou un centre d'intérêt spécifique -->
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="code" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Programmation</h4>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="database" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Base de Données</h4>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="film" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Cinéma</h4>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="coffee" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Café</h4>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="watch" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Jeux</h4>
-                        </div>
-                    </div><!--end content-->
-                    <!-- Nouveaux éléments ajoutés -->
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="music" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Music</h4>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="activity" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Sport</h4>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="book-open" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Lecture</h4>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
-                        <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
-                            <i data-feather="sliders" class="h-5 w-5 rotate-45"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-[17px] font-medium">Autres Activités</h4>
-                        </div>
-                    </div><!--end content-->
-                </div><!--end grid-->
-
-
-                <!-- Ajoutez d'autres compétences ou centres d'intérêt si nécessaire -->
-                </div><!--end grid-->
-            </div>
-            <!--end container-->
-        </section><!--end section-->
+        <section class="relative md:py-24 py-16" id="about"><div class="container">
+<div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+<div><img src="assets/images/hero/3.png" class="rounded-full shadow-md" alt="Carole DAPAH" loading="lazy"></div>
+<div><h2 class="portfolio-heading">Mon parcours</h2>
+<p class="text-slate-400 mb-6">Après une licence en informatique à l’Université de Strasbourg, j’ai poursuivi mon parcours en master Sciences du Logiciciel, avec une spécialisation en ingénierie logicielle.</p>
+<p class="text-slate-400 mb-6">Chez SNCF Voyageurs, au Technicentre Grand Est de Strasbourg, je participe au développement d’applications métiers et à la transformation numérique des activités de maintenance.</p>
+<p class="text-slate-400 mb-6">Mon travail associe développement logiciel, gestion des données et compréhension des besoins utilisateurs. J’accorde une attention particulière à la clarté des interfaces, à la fiabilité des traitements et à l’organisation du code.</p>
+<a href="#experience" class="portfolio-link">Découvrir mon expérience →</a></div></div></div></section><!--end section-->
         <!-- End -->
 
         <!-- Start -->
-        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="service">
-            <div class="container">
-                <div class="grid grid-cols-1 pb-8 text-center">
-                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Ce que j'offre</h3>
-                    <!-- Mise à jour de la description pour correspondre à vos compétences et expériences actuelles -->
-                    <p class="text-slate-400 max-w-xl mx-auto text-[15px]">
-                        En tant qu’étudiante en Master SIL et alternante à la SNCF, j’apporte une expertise en conception et développement de logiciels, en intégration de systèmes et en gestion de projets informatiques. Je combine rigueur technique et esprit d’innovation pour créer des solutions robustes et adaptées aux besoins métiers.
-                </div><!--end grid-->
-
-
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                    <!-- Content -->
-                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <i data-feather="code" class="h-10 w-10 stroke-1 text-amber-500"></i>
-                        <div class="content mt-7">
-                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Développement Web</a>
-                            <p class="text-slate-400 mt-3 text-[15px]">Spécialisée en développement de solutions web dynamiques utilisant HTML, CSS, JavaScript et Python pour des applications data-driven.</p>
-                            <div class="mt-5">
-                                <a href="" class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">En savoir plus <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content -->
-
-                    <!-- Content -->
-                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <i data-feather="cpu" class="h-10 w-10 stroke-1 text-amber-500"></i>
-                        <div class="content mt-7">
-                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Projets en Python</a>
-                            <p class="text-slate-400 mt-3 text-[15px]">Développement de divers projets en Python, y compris des applications pour le calcul de la convergence et des systèmes d'analyse de données.</p>
-                            <div class="mt-5">
-                                <a href="" class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">En savoir plus <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content -->
-
-                    <!-- Content -->
-                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <i data-feather="server" class="h-10 w-10 stroke-1 text-amber-500"></i>
-                        <div class="content mt-7">
-                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Création de Sites Web</a>
-                            <p class="text-slate-400 mt-3 text-[15px]">Conception et développement de sites web interactifs pour une meilleure expérience utilisateur, en utilisant les dernières technologies web.</p>
-                            <div class="mt-5">
-                                <a href="" class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">En savoir plus <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content -->
-
-                    <!-- Content -->
-                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <i data-feather="compass" class="h-10 w-10 stroke-1 text-amber-500"></i>
-                        <div class="content mt-7">
-                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Conception Graphique</a>
-                            <p class="text-slate-400 mt-3 text-[15px]">Capacité à créer des visuels attrayants et des interfaces utilisateurs qui améliorent l'expérience utilisateur sur des applications web et mobiles.</p>
-                            <div class="mt-5">
-                                <a href="" class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">En savoir plus <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content -->
-
-                    <!-- Content -->
-                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <i data-feather="settings" class="h-10 w-10 stroke-1 text-amber-500"></i>
-                        <div class="content mt-7">
-                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Sécurité Web</a>
-                            <p class="text-slate-400 mt-3 text-[15px]">Expertise dans la mise en œuvre de mesures de sécurité pour protéger les sites web contre les cyberattaques et garantir la confidentialité des données.</p>
-                            <div class="mt-5">
-                                <a href="" class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">En savoir plus <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content -->
-
-                    <!-- Content -->
-                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <i data-feather="watch" class="h-10 w-10 stroke-1 text-amber-500"></i>
-                        <div class="content mt-7">
-                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Support Continu 24/7</a>
-                            <p class="text-slate-400 mt-3 text-[15px]">Disponible pour fournir un soutien continu et une maintenance pour les projets, assurant un fonctionnement optimal et une intervention rapide en cas de besoin.</p>
-                            <div class="mt-5">
-                                <a href="" class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">En savoir plus <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content -->
-
-                </div>
-            </div><!--end container-->
-        </section><!--end section-->
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="competences"><div class="container"><h2 class="portfolio-heading text-center">Mes compétences</h2><p class="portfolio-intro text-center">Des technologies mobilisées selon les besoins des projets, de la conception au déploiement.</p><div class="portfolio-grid"><article class="portfolio-card"><h3>Langages de programmation</h3><div><span class="portfolio-tag">Python</span><span class="portfolio-tag">Java</span><span class="portfolio-tag">JavaScript</span><span class="portfolio-tag">Kotlin</span><span class="portfolio-tag">Swift</span><span class="portfolio-tag">SQL</span></div></article><article class="portfolio-card"><h3>Web et backend</h3><div><span class="portfolio-tag">HTML</span><span class="portfolio-tag">CSS</span><span class="portfolio-tag">React</span><span class="portfolio-tag">FastAPI</span><span class="portfolio-tag">API REST</span></div></article><article class="portfolio-card"><h3>Applications mobiles</h3><div><span class="portfolio-tag">Android</span><span class="portfolio-tag">Kotlin</span><span class="portfolio-tag">MVVM</span><span class="portfolio-tag">Room</span><span class="portfolio-tag">Retrofit</span><span class="portfolio-tag">Coroutines</span></div></article><article class="portfolio-card"><h3>Bases de données</h3><div><span class="portfolio-tag">PostgreSQL</span><span class="portfolio-tag">MongoDB</span><span class="portfolio-tag">SQLite</span><span class="portfolio-tag">Dataverse</span><span class="portfolio-tag">Modélisation</span></div></article><article class="portfolio-card"><h3>Data &amp; Business Intelligence</h3><div><span class="portfolio-tag">Collecte automatisée</span><span class="portfolio-tag">Qualité des données</span><span class="portfolio-tag">Power BI</span><span class="portfolio-tag">Power Query</span><span class="portfolio-tag">Tableaux de bord</span></div></article><article class="portfolio-card"><h3>Applications métiers</h3><div><span class="portfolio-tag">Power Apps</span><span class="portfolio-tag">Power Automate</span><span class="portfolio-tag">Dataverse</span><span class="portfolio-tag">Règles métiers</span></div></article><article class="portfolio-card"><h3>Réseaux et sécurité</h3><div><span class="portfolio-tag">SSH</span><span class="portfolio-tag">HTTP / HTTPS</span><span class="portfolio-tag">Wireshark</span><span class="portfolio-tag">Nmap</span><span class="portfolio-tag">iptables</span><span class="portfolio-tag">OpenSSL</span></div></article><article class="portfolio-card"><h3>Jeux et programmation parallèle</h3><div><span class="portfolio-tag">Godot</span><span class="portfolio-tag">Client-serveur</span><span class="portfolio-tag">Multijoueur</span><span class="portfolio-tag">OpenMP</span><span class="portfolio-tag">MPI</span></div></article><article class="portfolio-card"><h3>Outils et déploiement</h3><div><span class="portfolio-tag">Git</span><span class="portfolio-tag">GitHub</span><span class="portfolio-tag">Docker</span><span class="portfolio-tag">Docker Compose</span><span class="portfolio-tag">Linux</span></div></article><article class="portfolio-card"><h3>Intelligence artificielle &amp; machine learning</h3><p>Expérimentation et intégration de LLM dans des applications. Exploration de XGBoost et Random Forest pour ParkPredict : préparation des données, comparaison avec des modèles de référence et évaluation des prédictions.</p><div><span class="portfolio-tag">LLM</span><span class="portfolio-tag">XGBoost · exploration</span><span class="portfolio-tag">Random Forest · exploration</span></div></article><article class="portfolio-card"><h3>Gestion de projet &amp; développement agile</h3><p>Recueil des besoins, découpage des tâches, priorisation et développement itératif en équipe. Ajustement des fonctionnalités selon les retours utilisateurs.</p><div><span class="portfolio-tag">Trello</span><span class="portfolio-tag">Suivi de projet</span><span class="portfolio-tag">Développement agile</span></div></article><article class="portfolio-card"><h3>Conception &amp; qualité logicielle</h3><p>Maquettes et prototypage avec Figma, conception d’interfaces, organisation du code, tests et documentation.</p><div><span class="portfolio-tag">Figma</span><span class="portfolio-tag">Prototypage</span><span class="portfolio-tag">Tests</span><span class="portfolio-tag">Documentation</span></div></article></div></div></section><section class="relative md:py-24 py-16" id="projets"><div class="container"><h2 class="portfolio-heading text-center">Mes projets</h2><p class="portfolio-intro text-center">Des réalisations personnelles et collectives pour explorer le logiciel, les données et les usages du quotidien.</p><div class="portfolio-grid"><article class="portfolio-card"><h3>ParkPredict</h3><p><strong>Données & mobilité</strong><br>Projet de recherche et développement sur la disponibilité du stationnement à Strasbourg. Collecte automatisée et historisation des données de parkings et de trafic dans PostgreSQL, en préparation de leur analyse et de modèles de prédiction à l’heure d’arrivée.</p><div><span class="portfolio-tag">Python</span><span class="portfolio-tag">PostgreSQL</span><span class="portfolio-tag">Collecte de données</span></div></article><article class="portfolio-card"><h3>JobHunter</h3><p><strong>Backend & automatisation</strong><br>Application de veille d’offres d’emploi associant collecte, filtrage, classement, notifications et tableau de bord. Déploiement avec Docker.</p><div><span class="portfolio-tag">Python</span><span class="portfolio-tag">API</span><span class="portfolio-tag">Docker</span></div></article><article class="portfolio-card"><h3>MusicalQuiz</h3><p><strong>Application Android</strong><br>Quiz musical développé en Kotlin avec une architecture MVVM, une base locale Room et l’intégration de l’API Deezer.</p><div><span class="portfolio-tag">Kotlin</span><span class="portfolio-tag">MVVM</span><span class="portfolio-tag">Room</span><span class="portfolio-tag">Deezer</span></div></article><article class="portfolio-card"><h3>UNISTRABBLE</h3><p><strong>Projet collectif</strong><br>Jeu multijoueur développé avec Godot au sein d’une équipe de neuf personnes : architecture client-serveur, interfaces de jeu, chat et intelligence artificielle.</p><div><span class="portfolio-tag">Godot</span><span class="portfolio-tag">Figma</span><span class="portfolio-tag">Trello</span><span class="portfolio-tag">Multijoueur</span></div></article><article class="portfolio-card"><h3>Outfit Matcher</h3><p><strong>Technologie & mode</strong><br>Projet d’application proposant des associations de vêtements à partir d’une garde-robe, de la météo et du contexte. Exploration de recommandations personnalisées et d’une consommation plus réfléchie.</p><div><span class="portfolio-tag">Application web</span><span class="portfolio-tag">Personnalisation</span><span class="portfolio-tag">Conception produit</span></div></article></div><a href="projets.html" class="portfolio-link">Voir les démonstrations de MusicalQuiz et UNISTRABBLE →</a></div></section><section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="passions"><div class="container"><h2 class="portfolio-heading text-center">Mes passions</h2><div class="portfolio-grid"><article class="portfolio-card"><h3>Mode</h3><p>La mode m’intéresse pour sa créativité et la manière dont elle permet d’exprimer sa personnalité. Elle nourrit notamment mon projet Outfit Matcher.</p><div></div></article><article class="portfolio-card"><h3>Voyages &amp; basket</h3><p>Les voyages me permettent de découvrir d’autres cultures et d’élargir ma vision du monde. Le basket m’attire pour son énergie et son esprit collectif.</p><div></div></article></div></div></section><!--end section-->
         <!-- End -->
 
         <!-- Start -->
-        <section class="py-20 w-full table relative bg-[url('../../assets/images/bg/bg2.jpg')] bg-no-repeat bg-center bg-cover">
-            <div class="absolute inset-0 bg-slate-900/70"></div>
-            <div class="container relative">
-                <div class="grid grid-cols-1 pb-8 text-center">
-                    <h3 class="mb-4 md:text-2xl text-xl text-white font-semibold">Disponible pour des projets en freelance</h3>
-                    <p class="text-white/80 max-w-xl mx-auto text-[15px]">
-                        Toujours en quête de nouveaux défis et passionnée par la création de solutions innovantes, je mets mon expertise technique et ma créativité au service de vos projets. Prête à relever vos challenges, n’hésitez plus 
-                        <a href="" class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md">Engagez-moi</a>
-                    </div>
-                </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
+        <!--end section-->
         <!-- End -->
 
 <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="experience">
     <div class="container">
         <div class="grid grid-cols-1 pb-8 text-center">
             <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Expérience Professionnelle</h3>
-            <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Voici un aperçu de mon parcours professionnel, incluant des rôles dans les secteurs bancaire, commercial, juridique et ferroviaire, ainsi que des missions en intérim et vente.</p>
+            <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Mon expérience en développement d’applications métiers, complétée par des parcours qui ont renforcé ma rigueur, mon organisation et mon sens du service.</p>
         </div><!--end grid-->
 
         <!-- SNCF -->
@@ -383,12 +153,12 @@
                         <div class="md:text-end md:me-8 relative">
                             <img src="assets/images/logos/circle-logo.png"
                                  class="rounded-full h-9 w-9 md:ms-auto" alt="Logo SNCF">
-                            <h5 class="my-2 font-semibold text-lg">SNCF, Strasbourg</h5>
+                            <h5 class="my-2 font-semibold text-lg">SNCF Voyageurs — Technicentre Grand Est</h5>
                             <h6 class="text-sm mb-0">Sept. 2025 - Présent</h6>
                         </div>
                         <div class="text-start md:ms-8 mt-6 md:mt-0">
-                            <h5 class="title mb-1 font-semibold">Alternante</h5>
-                            <p class="mt-3 mb-0 text-slate-400 text-[15px]">Intégration d’une alternance en informatique, avec des missions techniques en développement et gestion de projets IT au sein de la SNCF.</p>
+                            <h5 class="title mb-1 font-semibold">Développement d’applications métiers — Alternance</h5>
+                            <p class="mt-3 mb-0 text-slate-400 text-[15px]">Conception d’applications avec Power Apps et Dataverse, automatisation avec Power Automate, préparation et contrôle des données avec Power Query et création de tableaux de bord Power BI. Recueil des besoins, tests et échanges avec les utilisateurs. Participation aux projets Sortie Astreinte, APPLIO, Suivi Médical Agent et Relevés Carnet de Bord.</p>
                         </div>
                     </div>
                 </div>
@@ -400,11 +170,11 @@
                             <img src="assets/images/logos/circle-logo.png"
                                  class="rounded-full h-9 w-9 md:ms-auto" alt="Logo BNP PARIBAS">
                             <h5 class="my-2 font-semibold text-lg">BNP PARIBAS, Strasbourg</h5>
-                            <h6 class="text-sm mb-0">Oct. 2023 - Aout. 2025</h6>
+                            <h6 class="text-sm mb-0">Oct. 2023 - Août 2025</h6>
                         </div>
                         <div class="text-start md:ms-8 mt-6 md:mt-0">
                             <h5 class="title mb-1 font-semibold">Auxiliaire de vacances</h5>
-                            <p class="mt-3 mb-0 text-slate-400 text-[15px]">Contribué aux opérations bancaires quotidiennes et soutenu l’équipe avec des tâches administratives, améliorant l’efficacité des services clients.</p>
+                            <p class="mt-3 mb-0 text-slate-400 text-[15px]">Participation aux opérations bancaires quotidiennes et aux tâches administratives, dans un environnement exigeant rigueur et sens du service.</p>
                         </div>
                     </div>
                 </div>
@@ -419,7 +189,7 @@
                             <h6 class="text-sm mb-0">Sept. 2024 - Juin 2025</h6>
                         </div>
                         <div class="ltr:float-left rtl:float-right md:text-end md:me-8 mt-6 md:mt-0 md:order-1">
-                            <h5 class="title mb-1 font-semibold">Sale advisor</h5>
+                            <h5 class="title mb-1 font-semibold">Conseillère de vente</h5>
                             <p class="mt-3 mb-0 text-slate-400 text-[15px]">Accompagnement des clients et travail en équipe pour assurer un service de qualité en boutique.</p>
                         </div>
                     </div>
@@ -469,7 +239,7 @@
             <div class="container">
                 <div class="grid grid-cols-1 pb-8 text-center">
                     <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Prenez Contact !</h3>
-                    <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Je suis disponible pour des projets freelance et des opportunités de collaboration. N'hésitez pas à me contacter pour toute question ou proposition.</p>
+                    <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Pour échanger autour de mes projets, du développement logiciel ou des données, vous pouvez me contacter par email ou sur LinkedIn.</p>
                 </div><!--end grid-->
 
                 <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-[30px]">
@@ -499,7 +269,7 @@
                                 </div>
                                 <button type="submit" id="submit" name="send" class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md h-11 justify-center flex items-center">Envoyer le Message</button>
                             </form>
-                            <div id="msg-status" style="display:none; color:green; margin-top:10px;">
+                            <div id="msg-status" role="status" aria-live="polite" style="display:none; color:green; margin-top:10px;">
                                     ✅ Votre message a bien été envoyé !
                             </div>
 
@@ -559,18 +329,18 @@
                         </div>
 
                         <div class="lg:col-span-5 text-center mt-6 md:mt-0">
-                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Carole DAPAH. Conçu avec <i class="mdi mdi-heart text-red-600"></i> par Carole.</p>
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Carole DAPAH. Développement logiciel &amp; Data.</p>
                         </div>
 
                         <ul class="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
                             <!-- LinkedIn -->
-                            <li class="inline"><a href="https://www.linkedin.com/in/carole-dapah-049a58265/" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-linkedin" title="LinkedIn"></i></a></li>
+                            <li class="inline"><a href="https://www.linkedin.com/in/carole-dapah-049a58265/" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-linkedin" title="LinkedIn"></i></a></li>
                             <!-- Facebook -->
-                            <li class="inline"><a href="https://www.facebook.com/webcreateplus" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-facebook-f align-middle" title="Facebook"></i></a></li>
+                            <li class="inline"><a href="https://www.facebook.com/webcreateplus" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-facebook-f align-middle" title="Facebook"></i></a></li>
                             <!-- Instagram -->
-                            <li class="inline"><a href="https://www.instagram.com/cdapah/" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-instagram align-middle" title="Instagram"></i></a></li>
+                            <li class="inline"><a href="https://www.instagram.com/cdapah/" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-instagram align-middle" title="Instagram"></i></a></li>
                             
-                            <li class="inline"><a href="https://twitter.com/" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
+                            
                             <li class="inline"><a href="mailto:dapahcarole1@gmail.com" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-envelope align-middle" title="email"></i></a></li>
                         </ul><!--end icon-->
                     </div><!--end grid-->
@@ -599,9 +369,7 @@
 
         <!-- LTR & RTL Mode Code -->
         <div class="fixed top-[40%] -right-3 z-50">
-            <a href="" id="">
-                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-medium ltr:block rtl:hidden">Carole</span>
-            </a>
+            
         </div>
         <!-- LTR & RTL Mode Code -->
 
@@ -617,6 +385,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("myForm");
     const msgStatus = document.getElementById("msg-status");
+    if (!form || !msgStatus) return;
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Empêche l'ouverture de la page Formspree
@@ -633,10 +402,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Vide les champs
                 form.reset();
 
-                // Recharge la page après 1,5 secondes
-                setTimeout(() => {
-                    location.reload();
-                }, 1500);
+
             } else {
                 alert("❌ Une erreur est survenue. Veuillez réessayer.");
             }
