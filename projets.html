@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mes Projets - Portfolio Carole</title>
-    <meta name="description" content="Carole portfolio - Projets de développement">
+    <title>Projets — Carole DAPAH | Logiciel &amp; Data</title>
+    <meta name="description" content="Projets de Carole DAPAH : ParkPredict, JobHunter, MusicalQuiz, UNISTRABBLE et Outfit Matcher.">
     <meta name="keywords" content="Carole portfolio, développement, projets">
     <meta name="author" content="Carole DAPAH">
     <link href="assets/images/favicon.ico" rel="shortcut icon">
@@ -131,7 +131,7 @@
             box-shadow: 0 15px 40px rgba(245, 158, 11, 0.3);
         }
     </style>
-</head>
+<style>section[id],article[id],div[id]{scroll-margin-top:110px}.tech-badge{border:1px solid rgba(251,191,36,.25);color:#fbbf24;background:rgba(251,191,36,.07)}a:focus-visible{outline:3px solid #fbbf24;outline-offset:4px}.fade-in-up{opacity:1;animation:none}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto!important}}</style></head>
 
 <body class="font-sans bg-navy-900 text-white min-h-screen">
 
@@ -152,7 +152,7 @@
             </div>
             
             <div class="flex items-center space-x-4">
-                <a href="https://www.linkedin.com/in/carole-dapah-049a58265/" target="_blank" 
+                <a href="https://www.linkedin.com/in/carole-dapah-049a58265/" target="_blank" rel="noopener noreferrer" 
                    class="w-10 h-10 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
                     <i class="uil uil-linkedin text-white"></i>
                 </a>
@@ -171,23 +171,47 @@
                 Mes <span class="text-amber-400">Projets</span>
             </h1>
             <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-                Découvrez mes réalisations techniques et créatives
+                Découvrez mes projets en développement logiciel, applications mobiles, automatisation et exploitation des données.
             </p>
         </div>
 
-        <div class="space-y-24">
+        <nav aria-label="Accès aux projets" class="flex flex-wrap justify-center gap-3 mt-8"><a href="#parkpredict" class="btn-secondary px-4 py-2 rounded-full text-sm">ParkPredict</a><a href="#jobhunter" class="btn-secondary px-4 py-2 rounded-full text-sm">JobHunter</a><a href="#musicalquiz" class="btn-secondary px-4 py-2 rounded-full text-sm">MusicalQuiz</a><a href="#unistrabble" class="btn-secondary px-4 py-2 rounded-full text-sm">UNISTRABBLE</a><a href="#outfit-matcher" class="btn-secondary px-4 py-2 rounded-full text-sm">Outfit Matcher</a></nav><div class="space-y-24 mt-12">
 
-            <!-- Projet 1: MusicalQuiz -->
-            <div class="project-card rounded-3xl p-8 md:p-12 fade-in-up delay-1">
+            <article id="parkpredict" class="project-card rounded-3xl p-8 md:p-12">
+ <p class="text-amber-400 font-medium mb-3">Données &amp; mobilité · R&amp;D en cours</p>
+ <h2 class="font-serif text-3xl md:text-4xl font-bold mb-6">ParkPredict</h2>
+ <p class="text-lg text-gray-300 leading-relaxed mb-8">Anticiper la disponibilité du stationnement à Strasbourg pour aider à comparer les options à une heure d’arrivée future.</p>
+ <div class="grid md:grid-cols-2 gap-8">
+ <div><h3 class="text-xl font-semibold text-amber-400 mb-3">Travail réalisé</h3><p class="text-gray-300 leading-relaxed">Collecte automatisée et historisation des données de parkings et de trafic dans PostgreSQL.</p></div>
+ <div><h3 class="text-xl font-semibold text-amber-400 mb-3">Pistes de développement</h3><p class="text-gray-300 leading-relaxed">Préparation des données et comparaison de modèles de prédiction, notamment XGBoost et Random Forest.</p></div></div>
+ <div class="flex flex-wrap gap-3 mt-8" aria-label="Technologies et domaines"><span class="tech-badge px-4 py-2 rounded-full text-sm">Python</span><span class="tech-badge px-4 py-2 rounded-full text-sm">PostgreSQL</span><span class="tech-badge px-4 py-2 rounded-full text-sm">API</span><span class="tech-badge px-4 py-2 rounded-full text-sm">Séries temporelles</span></div></article>
+<article id="jobhunter" class="project-card rounded-3xl p-8 md:p-12">
+ <p class="text-amber-400 font-medium mb-3">Backend &amp; automatisation</p>
+ <h2 class="font-serif text-3xl md:text-4xl font-bold mb-6">JobHunter</h2>
+ <p class="text-lg text-gray-300 leading-relaxed mb-8">Centraliser une veille d’offres d’emploi et faciliter leur suivi.</p>
+ <div class="grid md:grid-cols-2 gap-8">
+ <div><h3 class="text-xl font-semibold text-amber-400 mb-3">Travail réalisé</h3><p class="text-gray-300 leading-relaxed">Collecte via des sources publiques et API, filtrage, classement des offres, notifications et tableau de bord. Déploiement avec Docker.</p></div>
+ <div><h3 class="text-xl font-semibold text-amber-400 mb-3">Pistes de développement</h3><p class="text-gray-300 leading-relaxed">Amélioration continue de la pertinence des résultats et de la fiabilité des alertes.</p></div></div>
+ <div class="flex flex-wrap gap-3 mt-8" aria-label="Technologies et domaines"><span class="tech-badge px-4 py-2 rounded-full text-sm">Python</span><span class="tech-badge px-4 py-2 rounded-full text-sm">API REST</span><span class="tech-badge px-4 py-2 rounded-full text-sm">Docker</span><span class="tech-badge px-4 py-2 rounded-full text-sm">PostgreSQL</span></div></article>
+<article id="outfit-matcher" class="project-card rounded-3xl p-8 md:p-12">
+ <p class="text-amber-400 font-medium mb-3">Application web · Projet en développement</p>
+ <h2 class="font-serif text-3xl md:text-4xl font-bold mb-6">Outfit Matcher</h2>
+ <p class="text-lg text-gray-300 leading-relaxed mb-8">Proposer des associations de vêtements adaptées à la garde-robe, à la météo et au contexte d’utilisation.</p>
+ <div class="grid md:grid-cols-2 gap-8">
+ <div><h3 class="text-xl font-semibold text-amber-400 mb-3">Travail réalisé</h3><p class="text-gray-300 leading-relaxed">Conception d’une application autour de la gestion de la garde-robe et de la recommandation de tenues.</p></div>
+ <div><h3 class="text-xl font-semibold text-amber-400 mb-3">Pistes de développement</h3><p class="text-gray-300 leading-relaxed">Personnalisation selon les préférences et exploration d’une consommation plus réfléchie.</p></div></div>
+ <div class="flex flex-wrap gap-3 mt-8" aria-label="Technologies et domaines"><span class="tech-badge px-4 py-2 rounded-full text-sm">Application web</span><span class="tech-badge px-4 py-2 rounded-full text-sm">Conception produit</span><span class="tech-badge px-4 py-2 rounded-full text-sm">Recommandations</span></div></article>
+<!-- Projet 1: MusicalQuiz -->
+            <div id="musicalquiz" class="project-card rounded-3xl p-8 md:p-12 fade-in-up delay-1">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     
                     <!-- Vidéo -->
                     <div class="flex justify-center lg:order-1">
-                        <div class="video-container bg-black rounded-[2.5rem] p-4 shadow-2xl" style="width: 320px;">
+                        <div class="video-container bg-black rounded-[2.5rem] p-4 shadow-2xl" style="width: 320px; max-width: 100%;">
                             <video 
                                 id="quizVideo"
                                 src="assets/images/logos/Illustration_ecran_detail.mp4"
-                                class="rounded-[2rem] object-cover w-full h-auto"
+                                preload="metadata" class="rounded-[2rem] object-cover w-full h-auto"
                                 controls>
                             </video>
                         </div>
@@ -262,14 +286,14 @@
             </div>
 
             <!-- Projet 2: Unistrabble -->
-            <div class="project-card rounded-3xl p-8 md:p-12 fade-in-up delay-2">
+            <div id="unistrabble" class="project-card rounded-3xl p-8 md:p-12 fade-in-up delay-2">
                 
                 <!-- En-tête du projet -->
                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
     <div>
-        <h3 class="text-2xl font-bold text-white mb-2">Unistrabble</h3>
+        <h2 class="text-2xl font-bold text-white mb-2">UNISTRABBLE</h2>
     </div>
-    <a href="https://unistrabble.vercel.app/" target="_blank" 
+    <a href="https://unistrabble.vercel.app/" target="_blank" rel="noopener noreferrer" 
        class="btn-primary px-3 py-2 sm:px-6 sm:py-3 rounded-full font-medium flex items-center gap-2 hover:gap-3 transition-all duration-300 text-sm sm:text-base whitespace-nowrap">
         <span class="hidden xs:inline">Visiter le site</span>
         <span class="xs:hidden">Voir</span>
@@ -281,7 +305,7 @@
                 <div class="mb-12">
                     <h3 class="text-2xl font-semibold mb-4 text-amber-400">Description du Projet</h3>
                     <p class="text-lg text-gray-300 leading-relaxed">
-                        Projet intégrateur développé par une équipe de 9 personnes, visant à créer une plateforme universitaire interactive. 
+                        Projet intégrateur développé par une équipe de 9 personnes, visant à créer un jeu de lettres multijoueur. 
                         Le projet combine la logique des jeux, la messagerie, la gestion de thèmes, l'IA et la gestion du temps pour offrir 
                         une expérience immersive et collaborative.
                     </p>
@@ -291,11 +315,11 @@
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
                     <div class="group cursor-pointer">
                         <img src="assets/images/interface1.png" alt="Interface Unistrabble" 
-                             class="rounded-2xl shadow-2xl w-full h-64 object-cover transition-all duration-300 group-hover:scale-105 group-hover:shadow-amber-500/20">
+                             loading="lazy" class="rounded-2xl shadow-2xl w-full h-64 object-cover transition-all duration-300 group-hover:scale-105 group-hover:shadow-amber-500/20">
                     </div>
                     <div class="group cursor-pointer">
                         <img src="assets/images/gameplay1.png" alt="Gameplay Unistrabble" 
-                             class="rounded-2xl shadow-2xl w-full h-64 object-cover transition-all duration-300 group-hover:scale-105 group-hover:shadow-amber-500/20">
+                             loading="lazy" class="rounded-2xl shadow-2xl w-full h-64 object-cover transition-all duration-300 group-hover:scale-105 group-hover:shadow-amber-500/20">
                     </div>
                 </div>
 
